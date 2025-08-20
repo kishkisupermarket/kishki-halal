@@ -1,0 +1,248 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fresh Organic Apples",
+      "price": 2.99,
+      "oldPrice": 3.49,
+      "discount": 15,
+      "category": "Fruits",
+      "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400",
+        "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&auto=format&fit=crop&q=60"
+      ],
+      "description": "Crispy and sweet organic apples, freshly harvested from local farms. Perfect for snacking, baking, or making fresh juice.",
+      "nutrition": {
+        "calories": 52,
+        "protein": "0.3g",
+        "carbs": "14g",
+        "fat": "0.2g"
+      },
+      "rating": 4.8,
+      "reviewCount": 156,
+      "stock": 45,
+      "stockStatus": "in_stock",
+      "isNew": true,
+      "isFeatured": true,
+      "tags": ["organic", "fresh", "local", "healthy"],
+      "weight": "1kg",
+      "brand": "Organic Farms",
+      "sku": "APP-ORG-001",
+      "expiryDate": "2024-03-15",
+      "allergens": [],
+      "ingredients": ["100% Organic Apples"],
+      "storage": "Keep refrigerated",
+      "origin": "Saudi Arabia",
+      "organic": true,
+      "glutenFree": true,
+      "vegan": true
+    },
+    {
+      "id": 2,
+      "name": "Premium Olive Oil",
+      "price": 12.99,
+      "oldPrice": 15.99,
+      "discount": 19,
+      "category": "Oils",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400",
+        "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&auto=format&fit=crop&q=60"
+      ],
+      "description": "Extra virgin olive oil from the first cold pressing. Rich in antioxidants and perfect for cooking, salads, and dressings.",
+      "nutrition": {
+        "calories": 884,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "100g"
+      },
+      "rating": 4.9,
+      "reviewCount": 289,
+      "stock": 23,
+      "stockStatus": "in_stock",
+      "isNew": false,
+      "isFeatured": true,
+      "tags": ["premium", "extra-virgin", "cold-pressed", "healthy"],
+      "weight": "500ml",
+      "brand": "Mediterranean Gold",
+      "sku": "OIL-EV-002",
+      "expiryDate": "2025-01-20",
+      "allergens": [],
+      "ingredients": ["100% Extra Virgin Olive Oil"],
+      "storage": "Store in cool dark place",
+      "origin": "Italy",
+      "organic": true,
+      "glutenFree": true,
+      "vegan": true
+    },
+    {
+      "id": 3,
+      "name": "Whole Wheat Bread",
+      "price": 1.99,
+      "category": "Bakery",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400",
+        "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&auto=format&fit=crop&q=60"
+      ],
+      "description": "Freshly baked whole wheat bread, rich in fiber and nutrients. Perfect for sandwiches, toast, or as a side with meals.",
+      "nutrition": {
+        "calories": 265,
+        "protein": "9g",
+        "carbs": "49g",
+        "fat": "3.2g"
+      },
+      "rating": 4.6,
+      "reviewCount": 89,
+      "stock": 12,
+      "stockStatus": "low_stock",
+      "isNew": false,
+      "isFeatured": false,
+      "tags": ["whole-grain", "high-fiber", "fresh", "bakery"],
+      "weight": "400g",
+      "brand": "Daily Bake",
+      "sku": "BRD-WW-003",
+      "expiryDate": "2024-01-10",
+      "allergens": ["gluten", "wheat"],
+      "ingredients": ["Whole Wheat Flour", "Water", "Yeast", "Salt", "Honey"],
+      "storage": "Keep in cool dry place",
+      "origin": "Local Bakery",
+      "organic": false,
+      "glutenFree": false,
+      "vegan": true
+    },
+    {
+      "id": 4,
+      "name": "Organic Milk",
+      "price": 3.49,
+      "category": "Dairy",
+      "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400",
+        "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=60"
+      ],
+      "description": "Fresh organic milk from grass-fed cows. Rich in calcium and essential nutrients, perfect for drinking, cooking, or making yogurt.",
+      "nutrition": {
+        "calories": 61,
+        "protein": "3.2g",
+        "carbs": "4.8g",
+        "fat": "3.3g"
+      },
+      "rating": 4.7,
+      "reviewCount": 203,
+      "stock": 34,
+      "stockStatus": "in_stock",
+      "isNew": true,
+      "isFeatured": false,
+      "tags": ["organic", "grass-fed", "calcium-rich", "fresh"],
+      "weight": "1L",
+      "brand": "Green Pastures",
+      "sku": "MLK-ORG-004",
+      "expiryDate": "2024-01-08",
+      "allergens": ["milk"],
+      "ingredients": ["Organic Milk"],
+      "storage": "Keep refrigerated at 4°C",
+      "origin": "Local Dairy",
+      "organic": true,
+      "glutenFree": true,
+      "vegan": false
+    },
+    {
+      "id": 5,
+      "name": "Fresh Chicken Breast",
+      "price": 8.99,
+      "category": "Meat",
+      "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400",
+        "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=60",
+        "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&auto=format&fit=crop&q=60"
+      ],
+      "description": "Fresh, hormone-free chicken breast. Lean protein source, perfect for grilling, baking, or stir-frying.",
+      "nutrition": {
+        "calories": 165,
+        "protein": "31g",
+        "carbs": "0g",
+        "fat": "3.6g"
+      },
+      "rating": 4.5,
+      "reviewCount": 167,
+      "stock": 18,
+      "stockStatus": "in_stock",
+      "isNew": false,
+      "isFeatured": true,
+      "tags": ["fresh", "hormone-free", "lean-protein", "meat"],
+      "weight": "500g",
+      "brand": "Farm Fresh",
+      "sku": "CHK-BR-005",
+      "expiryDate": "2024-01-05",
+      "allergens": [],
+      "ingredients": ["Chicken Breast"],
+      "storage": "Keep refrigerated or frozen",
+      "origin": "Local Farm",
+      "organic": false,
+      "glutenFree": true,
+      "vegan": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "description": "Fresh seasonal fruits",
+      "image": "images/fruits.jpg",
+      "productCount": 45,
+      "tags": ["fresh", "seasonal", "organic"]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "description": "Organic vegetables",
+      "image": "images/vegetables.jpg",
+      "productCount": 38,
+      "tags": ["organic", "fresh", "local"]
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy",
+      "description": "Milk, cheese, and eggs",
+      "image": "images/dairy.jpg",
+      "productCount": 27,
+      "tags": ["fresh", "organic", "calcium"]
+    },
+    {
+      "id": "meat",
+      "name": "Meat",
+      "description": "Fresh meat and poultry",
+      "image": "images/meat.jpg",
+      "productCount": 19,
+      "tags": ["fresh", "hormone-free", "protein"]
+    },
+    {
+      "id": "bakery",
+      "name": "Bakery",
+      "description": "Fresh bread and pastries",
+      "image": "images/bakery.jpg",
+      "productCount": 33,
+      "tags": ["fresh", "artisanal", "daily"]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "description": "Drinks and juices",
+      "image": "images/beverages.jpg",
+      "productCount": 67,
+      "tags": ["refreshments", "healthy", "natural"]
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-01-03T10:30:00Z",
+    "totalProducts": 209,
+    "version": "1.0.0"
+  }
+}
