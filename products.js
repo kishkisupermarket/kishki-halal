@@ -1,4 +1,27 @@
-// ===== PRODUCTS MANAGEMENT =====
+// بيانات مؤقتة للمنتجات (حتى تعمل)
+const temporaryProducts = [
+    {
+        id: 1,
+        name: "تفاح عضوي طازج",
+        price: 15.99,
+        category: "فواكه",
+        image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300",
+        rating: 4.8,
+        description: "تفاح طازج من مزارع محلية"
+    },
+    {
+        id: 2, 
+        name: "زيت زيتون بكر",
+        price: 32.99,
+        category: "زيوت",
+        image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300",
+        rating: 4.9,
+        description: "زيت زيتون ممتاز من العصرة الأولى"
+    }
+];
+
+// استخدم البيانات المؤقتة حتى يعمل الموقع
+displayProducts(temporaryProducts);// ===== PRODUCTS MANAGEMENT =====
 
 document.addEventListener('DOMContentLoaded', function() {
     loadProducts();
