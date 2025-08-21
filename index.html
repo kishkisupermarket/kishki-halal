@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سوبرماركت كيشكي - KISHKI Supermarket</title>
+    <title>KISHKI Supermarket - Fresh Groceries Online</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- شريط التنقل العلوي -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/logo.png" alt="KISHKI Logo" class="logo">
-                <span>كيشكي</span>
+                <img src="./images/logo.png" alt="KISHKI Logo" class="logo">
+                <span>KISHKI</span>
             </div>
             
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">الرئيسية</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#products" class="nav-link">المنتجات</a>
+                    <a href="#products" class="nav-link">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#categories" class="nav-link">الأقسام</a>
+                    <a href="#categories" class="nav-link">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#offers" class="nav-link">العروض</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">عن المتجر</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">اتصل بنا</a>
+                    <a href="#offers" class="nav-link">Offers</a>
                 </li>
                 <li class="nav-item">
                     <a href="#cart" class="nav-link cart-icon">
@@ -46,7 +40,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#login" class="nav-link login-btn">تسجيل الدخول</a>
+                    <a href="#login" class="nav-link login-btn">Login</a>
                 </li>
             </ul>
 
@@ -58,205 +52,165 @@
         </div>
     </nav>
 
-    <!-- قسم الهيرو -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>مرحباً بكم في سوبرماركت <span class="highlight">كيشكي</span></h1>
-                <p>أفضل المنتجات الطازجة بأفضل الأسعار، توصيل سريع لجميع أنحاء المدينة</p>
+                <h1>Welcome to <span class="highlight">KISHKI</span> Supermarket</h1>
+                <p>Fresh groceries delivered to your doorstep. Quality products at the best prices.</p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="scrollToSection('products')">
                         <i class="fas fa-shopping-bag"></i>
-                        تسوق الآن
+                        Shop Now
                     </button>
                     <button class="btn btn-outline" onclick="scrollToSection('offers')">
                         <i class="fas fa-percent"></i>
-                        تصفح العروض
+                        View Offers
                     </button>
                 </div>
                 <div class="hero-features">
                     <div class="feature">
                         <i class="fas fa-truck"></i>
-                        <span>توصيل مجاني</span>
+                        <span>Free Delivery</span>
                     </div>
                     <div class="feature">
                         <i class="fas fa-shield-alt"></i>
-                        <span>دفع آمن</span>
+                        <span>Secure Payment</span>
                     </div>
                     <div class="feature">
                         <i class="fas fa-undo"></i>
-                        <span>إرجاع مجاني</span>
+                        <span>Easy Returns</span>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero-bg.png" alt="سوبرماركت كيشكي" class="hero-img">
-                <div class="hero-shape">
-                    <img src="images/hero-shape.png" alt="shape">
-                </div>
+                <img src="./images/hero-bg.png" alt="KISHKI Supermarket" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- قسم الأقسام -->
+    <!-- Categories Section -->
     <section id="categories" class="categories">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">أقسام المتجر</h2>
-                <p class="section-subtitle">اكتشف جميع الأقسام والمنتجات المتاحة</p>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Explore our wide range of products</p>
             </div>
             <div class="categories-grid">
                 <div class="category-card" data-category="fruits">
                     <div class="category-icon">
                         <i class="fas fa-apple-alt"></i>
                     </div>
-                    <h3>الفواكه الطازجة</h3>
-                    <p>أجود أنواع الفواكه الموسمية</p>
-                    <span class="category-badge">125 منتج</span>
+                    <h3>Fresh Fruits</h3>
+                    <p>Seasonal and exotic fruits</p>
+                    <span class="category-badge">125 products</span>
                 </div>
 
                 <div class="category-card" data-category="vegetables">
                     <div class="category-icon">
                         <i class="fas fa-carrot"></i>
                     </div>
-                    <h3>الخضروات</h3>
-                    <p>خضروات طازجة يومياً</p>
-                    <span class="category-badge">98 منتج</span>
+                    <h3>Vegetables</h3>
+                    <p>Fresh organic vegetables</p>
+                    <span class="category-badge">98 products</span>
                 </div>
 
                 <div class="category-card" data-category="dairy">
                     <div class="category-icon">
                         <i class="fas fa-cheese"></i>
                     </div>
-                    <h3>الألبان</h3>
-                    <p>منتجات ألبان طازجة</p>
-                    <span class="category-badge">76 منتج</span>
+                    <h3>Dairy Products</h3>
+                    <p>Milk, cheese, and eggs</p>
+                    <span class="category-badge">76 products</span>
                 </div>
 
                 <div class="category-card" data-category="meat">
                     <div class="category-icon">
                         <i class="fas fa-drumstick-bite"></i>
                     </div>
-                    <h3>اللحوم</h3>
-                    <p>لحوم طازجة ومعالجة</p>
-                    <span class="category-badge">54 منتج</span>
+                    <h3>Meat & Poultry</h3>
+                    <p>Fresh meat and chicken</p>
+                    <span class="category-badge">54 products</span>
                 </div>
 
                 <div class="category-card" data-category="bakery">
                     <div class="category-icon">
                         <i class="fas fa-bread-slice"></i>
                     </div>
-                    <h3>المخبوزات</h3>
-                    <p>مخبوزات طازجة يومياً</p>
-                    <span class="category-badge">67 منتج</span>
+                    <h3>Bakery</h3>
+                    <p>Fresh bread and pastries</p>
+                    <span class="category-badge">67 products</span>
                 </div>
 
                 <div class="category-card" data-category="beverages">
                     <div class="category-icon">
                         <i class="fas fa-wine-bottle"></i>
                     </div>
-                    <h3>المشروبات</h3>
-                    <p>مشروبات باردة وساخنة</p>
-                    <span class="category-badge">112 منتج</span>
+                    <h3>Beverages</h3>
+                    <p>Drinks and juices</p>
+                    <span class="category-badge">112 products</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم المنتجات -->
+    <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">أحدث المنتجات</h2>
-                <p class="section-subtitle">اكتشف منتجاتنا المميزة</p>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Discover our best-selling items</p>
             </div>
             
             <div class="products-filter">
-                <button class="filter-btn active" data-filter="all">جميع المنتجات</button>
-                <button class="filter-btn" data-filter="featured">مميز</button>
-                <button class="filter-btn" data-filter="sale">العروض</button>
-                <button class="filter-btn" data-filter="new">جديد</button>
-                <button class="filter-btn" data-filter="bestseller">الأكثر مبيعاً</button>
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="featured">Featured</button>
+                <button class="filter-btn" data-filter="sale">On Sale</button>
+                <button class="filter-btn" data-filter="new">New Arrivals</button>
+                <button class="filter-btn" data-filter="bestseller">Bestsellers</button>
             </div>
 
             <div class="products-grid" id="products-container">
-                <!-- المنتجات سيتم تحميلها بواسطة JavaScript -->
-            </div>
-
-            <div class="products-loading" id="products-loading">
-                <div class="loading-spinner"></div>
-                <p>جاري تحميل المنتجات...</p>
-            </div>
-
-            <div class="products-pagination" id="products-pagination">
-                <button class="pagination-btn prev" disabled>
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="pagination-numbers"></div>
-                <button class="pagination-btn next">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
+                <!-- Products will be loaded by JavaScript -->
+                <div class="products-loading" id="products-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading products...</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم العروض -->
+    <!-- Offers Section -->
     <section id="offers" class="offers">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">العروض الخاصة</h2>
-                <p class="section-subtitle">استفد من عروضنا المميزة</p>
+                <h2 class="section-title">Special Offers</h2>
+                <p class="section-subtitle">Don't miss these amazing deals</p>
             </div>
 
             <div class="offers-slider">
                 <div class="offer-slide">
                     <div class="offer-card">
-                        <div class="offer-badge">خصم 20%</div>
-                        <img src="images/offer-1.jpg" alt="عرض خاص">
+                        <div class="offer-badge">20% OFF</div>
+                        <img src="./images/offer-1.jpg" alt="Special Offer">
                         <div class="offer-content">
-                            <h3>عرض الفواكه الموسمية</h3>
-                            <p>خصم 20% على جميع الفواكه الموسمية</p>
+                            <h3>Fresh Fruits Sale</h3>
+                            <p>20% off on all seasonal fruits</p>
                             <div class="offer-timer">
                                 <div class="timer-item">
                                     <span class="timer-value">02</span>
-                                    <span class="timer-label">أيام</span>
+                                    <span class="timer-label">Days</span>
                                 </div>
                                 <div class="timer-item">
                                     <span class="timer-value">12</span>
-                                    <span class="timer-label">ساعات</span>
+                                    <span class="timer-label">Hours</span>
                                 </div>
                                 <div class="timer-item">
                                     <span class="timer-value">45</span>
-                                    <span class="timer-label">دقائق</span>
+                                    <span class="timer-label">Mins</span>
                                 </div>
                             </div>
-                            <button class="btn btn-primary">اشتري الآن</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="offer-slide">
-                    <div class="offer-card">
-                        <div class="offer-badge">خصم 30%</div>
-                        <img src="images/offer-2.jpg" alt="عرض خاص">
-                        <div class="offer-content">
-                            <h3>عرض اللحوم الطازجة</h3>
-                            <p>خصم 30% على جميع أنواع اللحوم</p>
-                            <div class="offer-timer">
-                                <div class="timer-item">
-                                    <span class="timer-value">01</span>
-                                    <span class="timer-label">أيام</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-value">08</span>
-                                    <span class="timer-label">ساعات</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-value">30</span>
-                                    <span class="timer-label">دقائق</span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary">اشتري الآن</button>
+                            <button class="btn btn-primary">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -264,197 +218,103 @@
         </div>
     </section>
 
-    <!-- قسم عن المتجر -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>عن متجر كيشكي</h2>
-                    <p>كيشكي هو وجهتك الأولى للتسوق الإلكتروني للمواد الغذائية والمنتجات الطازجة. نحن نقدم أجود المنتجات بأفضل الأسعار مع خدمة توصيل سريعة وموثوقة.</p>
-                    
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">منتج</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">1000+</span>
-                            <span class="stat-label">عميل راضي</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">موظف</span>
-                        </div>
-                    </div>
-
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>جودة عالية</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>أسعار منافسة</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>توصيل سريع</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="عن متجر كيشكي">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم اتصل بنا -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">اتصل بنا</h2>
-                <p class="section-subtitle">نحن هنا لمساعدتك</p>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>العنوان</h4>
-                            <p>حي السلامة، شارع الملك فهد، جدة</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>الهاتف</h4>
-                            <p>+966 12 345 6789</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>البريد الإلكتروني</h4>
-                            <p>info@kishki.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>ساعات العمل</h4>
-                            <p>السبت - الخميس: 8 ص - 12 م</p>
-                            <p>الجمعة: 4 م - 12 م</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="الاسم الكامل" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="البريد الإلكتروني" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="رقم الهاتف">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="رسالتك" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الفوتر -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="images/logo.png" alt="KISHKI Logo">
-                        <span>كيشكي</span>
+                        <img src="./images/logo.png" alt="KISHKI Logo">
+                        <span>KISHKI</span>
                     </div>
-                    <p>متجرك المفضل للتسوق الإلكتروني للمواد الغذائية والمنتجات الطازجة.</p>
+                    <p>Your favorite online supermarket for fresh groceries and daily needs.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-snapchat"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-section">
-                    <h3>روابط سريعة</h3>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#products">المنتجات</a></li>
-                        <li><a href="#categories">الأقسام</a></li>
-                        <li><a href="#offers">العروض</a></li>
-                        <li><a href="#about">عن المتجر</a></li>
-                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#offers">Offers</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h3>أقسام المنتجات</h3>
+                    <h3>Customer Service</h3>
                     <ul>
-                        <li><a href="#">الفواكه</a></li>
-                        <li><a href="#">الخضروات</a></li>
-                        <li><a href="#">الألبان</a></li>
-                        <li><a href="#">اللحوم</a></li>
-                        <li><a href="#">المشروبات</a></li>
-                        <li><a href="#">المخبوزات</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h3>خدمة العملاء</h3>
-                    <ul>
-                        <li><a href="#">سياسة الإرجاع</a></li>
-                        <li><a href="#">الشروط والأحكام</a></li>
-                        <li><a href="#">سياسة الخصوصية</a></li>
-                        <li><a href="#">الأسئلة الشائعة</a></li>
-                        <li><a href="#">تتبع الطلب</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>اشترك في النشرة البريدية</h3>
-                    <p>اشترك لتحصل على آخر العروض والتخفيضات</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="بريدك الإلكتروني" required>
-                        <button type="submit">اشتراك</button>
-                    </form>
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> King Fahd Road, Jeddah</p>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@kishki.com</p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2023 سوبرماركت كيشكي. جميع الحقوق محفوظة.</p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                    <i class="fab fa-cc-apple-pay"></i>
-                </div>
+                <p>&copy; 2024 KISHKI Supermarket. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- السكريبتات -->
-    <script src="js/main.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/contact.js"></script>
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/contact.js"></script>
+
+    <!-- Temporary products data -->
+    <script>
+        // Temporary products data until JSON loads
+        const temporaryProducts = [
+            {
+                id: 1,
+                name: "Fresh Organic Apples",
+                price: 15.99,
+                category: "Fruits",
+                image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300",
+                rating: 4.8,
+                description: "Crispy organic apples from local farms"
+            },
+            {
+                id: 2,
+                name: "Premium Olive Oil",
+                price: 32.99,
+                category: "Oils",
+                image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300",
+                rating: 4.9,
+                description: "Extra virgin olive oil first cold press"
+            },
+            {
+                id: 3,
+                name: "Whole Wheat Bread",
+                price: 8.99,
+                category: "Bakery",
+                image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300",
+                rating: 4.5,
+                description: "Freshly baked whole wheat bread"
+            }
+        ];
+
+        // Load temporary products immediately
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof displayProducts === 'function') {
+                displayProducts(temporaryProducts);
+            }
+        });
+    </script>
 </body>
 </html>
