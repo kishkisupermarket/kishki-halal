@@ -10,13 +10,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Emergency styles if CSS doesn't load */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            text-align: left;
+            direction: ltr;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .categories {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="./images/logo.png" alt="KISHKI Logo" class="logo">
+                <img src="./images/logo.png" alt="KISHKI Logo" class="logo" style="width: 40px; height: 40px;">
                 <span>KISHKI</span>
             </div>
             
@@ -54,9 +196,9 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
+        <div class="container">
             <div class="hero-content">
-                <h1>Welcome to <span class="highlight">KISHKI</span> Supermarket</h1>
+                <h1>Welcome to <span style="color: #ffd700;">KISHKI</span> Supermarket</h1>
                 <p>Fresh groceries delivered to your doorstep. Quality products at the best prices.</p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary" onclick="scrollToSection('products')">
@@ -68,23 +210,20 @@
                         View Offers
                     </button>
                 </div>
-                <div class="hero-features">
-                    <div class="feature">
+                <div class="hero-features" style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
+                    <div class="feature" style="display: flex; align-items: center; gap: 0.5rem;">
                         <i class="fas fa-truck"></i>
                         <span>Free Delivery</span>
                     </div>
-                    <div class="feature">
+                    <div class="feature" style="display: flex; align-items: center; gap: 0.5rem;">
                         <i class="fas fa-shield-alt"></i>
                         <span>Secure Payment</span>
                     </div>
-                    <div class="feature">
+                    <div class="feature" style="display: flex; align-items: center; gap: 0.5rem;">
                         <i class="fas fa-undo"></i>
                         <span>Easy Returns</span>
                     </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="./images/hero-bg.png" alt="KISHKI Supermarket" class="hero-img">
             </div>
         </div>
     </section>
@@ -97,122 +236,74 @@
                 <p class="section-subtitle">Explore our wide range of products</p>
             </div>
             <div class="categories-grid">
-                <div class="category-card" data-category="fruits">
-                    <div class="category-icon">
+                <div class="category-card">
+                    <div class="category-icon" style="font-size: 2rem; color: #4CAF50; margin-bottom: 1rem;">
                         <i class="fas fa-apple-alt"></i>
                     </div>
                     <h3>Fresh Fruits</h3>
                     <p>Seasonal and exotic fruits</p>
-                    <span class="category-badge">125 products</span>
+                    <span class="category-badge" style="background: #4CAF50; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">125 products</span>
                 </div>
 
-                <div class="category-card" data-category="vegetables">
-                    <div class="category-icon">
+                <div class="category-card">
+                    <div class="category-icon" style="font-size: 2rem; color: #4CAF50; margin-bottom: 1rem;">
                         <i class="fas fa-carrot"></i>
                     </div>
                     <h3>Vegetables</h3>
                     <p>Fresh organic vegetables</p>
-                    <span class="category-badge">98 products</span>
+                    <span class="category-badge" style="background: #4CAF50; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">98 products</span>
                 </div>
 
-                <div class="category-card" data-category="dairy">
-                    <div class="category-icon">
+                <div class="category-card">
+                    <div class="category-icon" style="font-size: 2rem; color: #4CAF50; margin-bottom: 1rem;">
                         <i class="fas fa-cheese"></i>
                     </div>
                     <h3>Dairy Products</h3>
                     <p>Milk, cheese, and eggs</p>
-                    <span class="category-badge">76 products</span>
+                    <span class="category-badge" style="background: #4CAF50; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">76 products</span>
                 </div>
 
-                <div class="category-card" data-category="meat">
-                    <div class="category-icon">
+                <div class="category-card">
+                    <div class="category-icon" style="font-size: 2rem; color: #4CAF50; margin-bottom: 1rem;">
                         <i class="fas fa-drumstick-bite"></i>
                     </div>
                     <h3>Meat & Poultry</h3>
                     <p>Fresh meat and chicken</p>
-                    <span class="category-badge">54 products</span>
-                </div>
-
-                <div class="category-card" data-category="bakery">
-                    <div class="category-icon">
-                        <i class="fas fa-bread-slice"></i>
-                    </div>
-                    <h3>Bakery</h3>
-                    <p>Fresh bread and pastries</p>
-                    <span class="category-badge">67 products</span>
-                </div>
-
-                <div class="category-card" data-category="beverages">
-                    <div class="category-icon">
-                        <i class="fas fa-wine-bottle"></i>
-                    </div>
-                    <h3>Beverages</h3>
-                    <p>Drinks and juices</p>
-                    <span class="category-badge">112 products</span>
+                    <span class="category-badge" style="background: #4CAF50; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">54 products</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="products">
+    <section id="products" class="products" style="padding: 80px 0;">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured Products</h2>
                 <p class="section-subtitle">Discover our best-selling items</p>
             </div>
             
-            <div class="products-filter">
-                <button class="filter-btn active" data-filter="all">All Products</button>
-                <button class="filter-btn" data-filter="featured">Featured</button>
-                <button class="filter-btn" data-filter="sale">On Sale</button>
-                <button class="filter-btn" data-filter="new">New Arrivals</button>
-                <button class="filter-btn" data-filter="bestseller">Bestsellers</button>
-            </div>
-
             <div class="products-grid" id="products-container">
                 <!-- Products will be loaded by JavaScript -->
-                <div class="products-loading" id="products-loading">
-                    <div class="loading-spinner"></div>
-                    <p>Loading products...</p>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300" alt="Organic Apples" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    <h3>Fresh Organic Apples</h3>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #4CAF50;">$15.99</p>
+                    <button class="btn btn-primary" style="margin-top: 1rem;">Add to Cart</button>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Offers Section -->
-    <section id="offers" class="offers">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Special Offers</h2>
-                <p class="section-subtitle">Don't miss these amazing deals</p>
-            </div>
-
-            <div class="offers-slider">
-                <div class="offer-slide">
-                    <div class="offer-card">
-                        <div class="offer-badge">20% OFF</div>
-                        <img src="./images/offer-1.jpg" alt="Special Offer">
-                        <div class="offer-content">
-                            <h3>Fresh Fruits Sale</h3>
-                            <p>20% off on all seasonal fruits</p>
-                            <div class="offer-timer">
-                                <div class="timer-item">
-                                    <span class="timer-value">02</span>
-                                    <span class="timer-label">Days</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-value">12</span>
-                                    <span class="timer-label">Hours</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-value">45</span>
-                                    <span class="timer-label">Mins</span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary">Shop Now</button>
-                        </div>
-                    </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300" alt="Olive Oil" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    <h3>Premium Olive Oil</h3>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #4CAF50;">$32.99</p>
+                    <button class="btn btn-primary" style="margin-top: 1rem;">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300" alt="Whole Wheat Bread" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    <h3>Whole Wheat Bread</h3>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #4CAF50;">$8.99</p>
+                    <button class="btn btn-primary" style="margin-top: 1rem;">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -221,37 +312,27 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="./images/logo.png" alt="KISHKI Logo">
-                        <span>KISHKI</span>
+                    <div class="footer-logo" style="display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+                        <img src="./images/logo.png" alt="KISHKI Logo" style="width: 30px; height: 30px;">
+                        <span style="font-size: 1.2rem; font-weight: bold;">KISHKI</span>
                     </div>
                     <p>Your favorite online supermarket for fresh groceries and daily needs.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    <div class="social-links" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-section">
                     <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#offers">Offers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Returns Policy</a></li>
-                        <li><a href="#">FAQs</a></li>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#home" style="color: #ccc; text-decoration: none;">Home</a></li>
+                        <li><a href="#products" style="color: #ccc; text-decoration: none;">Products</a></li>
+                        <li><a href="#categories" style="color: #ccc; text-decoration: none;">Categories</a></li>
+                        <li><a href="#offers" style="color: #ccc; text-decoration: none;">Offers</a></li>
                     </ul>
                 </div>
 
@@ -263,56 +344,37 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer-bottom" style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
                 <p>&copy; 2024 KISHKI Supermarket. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript Files -->
-    <script src="./js/main.js"></script>
-    <script src="./js/products.js"></script>
-    <script src="./js/cart.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/contact.js"></script>
-
-    <!-- Temporary products data -->
     <script>
-        // Temporary products data until JSON loads
-        const temporaryProducts = [
-            {
-                id: 1,
-                name: "Fresh Organic Apples",
-                price: 15.99,
-                category: "Fruits",
-                image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300",
-                rating: 4.8,
-                description: "Crispy organic apples from local farms"
-            },
-            {
-                id: 2,
-                name: "Premium Olive Oil",
-                price: 32.99,
-                category: "Oils",
-                image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300",
-                rating: 4.9,
-                description: "Extra virgin olive oil first cold press"
-            },
-            {
-                id: 3,
-                name: "Whole Wheat Bread",
-                price: 8.99,
-                category: "Bakery",
-                image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300",
-                rating: 4.5,
-                description: "Freshly baked whole wheat bread"
+        // Simple JavaScript for basic functionality
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
             }
-        ];
-
-        // Load temporary products immediately
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof displayProducts === 'function') {
-                displayProducts(temporaryProducts);
+        }
+        
+        // Add to cart functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('btn-primary')) {
+                const productCard = e.target.closest('.product-card');
+                if (productCard) {
+                    const productName = productCard.querySelector('h3').textContent;
+                    alert(`Added to cart: ${productName}`);
+                    
+                    // Update cart count
+                    const cartCount = document.querySelector('.cart-count');
+                    if (cartCount) {
+                        const currentCount = parseInt(cartCount.textContent) || 0;
+                        cartCount.textContent = currentCount + 1;
+                    }
+                }
             }
         });
     </script>
